@@ -24,7 +24,7 @@ function MyNavbar() {
         className="bg-gray-200 rounded-full mb-10"
         variant='flat'
       >
-        +
+        {isExpanded ? '-' : '+'}
       </Button>
       <div className={`space-y-5 transition-all duration-500 ${isExpanded ? 'block' : 'hidden'}`}>
         {navLinks.map((section, index) => (
