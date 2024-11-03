@@ -17,7 +17,7 @@ function MyNavbar() {
   ];
 
   return (
-    <div className="fixed left-0 top-0 p-10">
+    <div className="absolute left-0 top-0 p-10 z-20">
       <Button
         isIconOnly
         onClick={toggleSidebar}

@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    /* Custom scrollbar styles */
+    * {
+      scrollbar-width: none; /* For Firefox */
+    }
+  
+    *::-webkit-scrollbar {
+      display: none; /* For Chrome, Safari, and Edge */
+    }
+  
+    /* Apply styles to html and body */
+    html,
+    body {
+      overflow: scroll;
+    }
+  }
