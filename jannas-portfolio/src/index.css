@@ -3,18 +3,34 @@
 @tailwind utilities;
 
 @layer base {
-    /* Custom scrollbar styles */
-    * {
-      scrollbar-width: none; /* For Firefox */
-    }
-  
-    *::-webkit-scrollbar {
-      display: none; /* For Chrome, Safari, and Edge */
-    }
-  
-    /* Apply styles to html and body */
-    html,
-    body {
-      overflow: scroll;
-    }
+  @font-face {
+    font-family: 'GT-Super';
+    src: url('./fonts/GT-Super-Display-Super.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    display: swap;
   }
+
+  @font-face {
+    font-family: 'GT-Super';
+    src: url('./fonts/GT-Super-Display-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    display: swap;
+  }
+
+  /* Custom scrollbar styles */
+  * {
+    scrollbar-width: none; /* For Firefox */
+  }
+
+  *::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+  }
+
+  /* Apply styles to html and body */
+  html,
+  body {
+    overflow: scroll;
+  }
+}

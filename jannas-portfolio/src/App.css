@@ -32,6 +32,13 @@ section {
   transition: clip-path 300ms ease-out;
 }
 
+.arrow-svg {
+  position: absolute;
+  top: var(--y, 50%);
+  left: var(--x, 50%);
+  transform: translate(-50%, -50%);
+}
+
 
 svg {
   margin: 1em;
