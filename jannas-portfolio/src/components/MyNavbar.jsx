@@ -1,6 +1,6 @@
+import { Button } from '@nextui-org/react';
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import { Button } from '@nextui-org/react';
 
 function MyNavbar() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -17,13 +17,8 @@ function MyNavbar() {
   ];
 
   return (
-    <div className="absolute left-0 top-0 p-10 z-20">
-      <Button
-        isIconOnly
-        onClick={toggleSidebar}
-        className="bg-gray-200 rounded-full mb-10"
-        variant='flat'
-      >
+    <div className="navbar absolute left-0 top-0 p-10 z-50">
+      <Button isIconOnly onClick={toggleSidebar} className="bg-gray-200 rounded-full mb-10" variant="flat">
         {isExpanded ? '-' : '+'}
       </Button>
       <div className={`space-y-5 transition-all duration-500 ${isExpanded ? 'block' : 'hidden'}`}>
