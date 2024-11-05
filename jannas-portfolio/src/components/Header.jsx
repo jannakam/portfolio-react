@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
 import { Image } from '@nextui-org/react';
-import { Button } from '@nextui-org/react';
+import gsap from 'gsap';
+import React, { useEffect, useRef, useState } from 'react';
 import Janna1 from '../assets/Janna_1.png';
 import Janna2 from '../assets/Janna_2.png';
-import gsap from 'gsap';
 
 function Header() {
   const overlayRef = useRef(null);
@@ -29,6 +28,12 @@ function Header() {
         duration: 0.6,
         ease: 'sine.out',
       });
+
+      if (e.target.closest('button, a, .navbar')) {
+        cursorRef.current.classList.add('hidden');
+      } else {
+        cursorRef.current.classList.remove('hidden');
+      }
     };
 
     const handleClick = (e) => {
@@ -80,7 +85,7 @@ function Header() {
         <Image src={Janna2} alt="Janna" width={800} />
       </div>
       {/* Arrow SVG for cursor when hovering over the header */}
-      <div ref={cursorRef} className="arrow-svg pointer-events-none z-50">
+      <div ref={cursorRef} className="arrow-svg pointer-events-none z-40">
         <svg
           viewBox="0 0 24 24"
           fill="none"
