@@ -1,5 +1,6 @@
 const { nextui } = require("@nextui-org/react");
 
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -8,6 +9,9 @@ export default {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
+    fontFamily: {
+      pc: ["Perfect-Condensed", "sans"],
+    },
     extend: {},
   },
   darkMode: "class",

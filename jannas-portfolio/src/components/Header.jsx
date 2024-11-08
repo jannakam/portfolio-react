@@ -4,6 +4,7 @@ import { Button } from '@nextui-org/react';
 import Janna1 from '../assets/Janna_1.png';
 import Janna2 from '../assets/Janna_2.png';
 import gsap from 'gsap';
+import '../App.css';
 
 function Header() {
   const overlayRef = useRef(null);
