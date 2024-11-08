@@ -41,15 +41,23 @@ function Header() {
         {/* Primary Image (visible by default) */}
         <div className='is-open flex flex-row items-center justify-center'>
 
-          <div className='flex flex-col justify-center items-baseline'>
-            <h1 class="inline">
+          <div className='flex flex-col justify-center gap-5'>
+            <h1 class="inline text-8xl">
                 Hi, it's <span class="text-[#B76D68] inline">Janna</span>
             </h1>
-            <Button isIconOnly onClick={handleOverlayToggle} className="cursor-pointer w-20 h-20 rounded-full bg-[#121420]">
-            <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+            <div className='flex flex-row w-[400px] justify-between items-center gap-5'>
+            <p className='text-3xl w-3/4'>Click to meet the developer</p>
+            <Button isIconOnly onClick={handleOverlayToggle} className="cursor-pointer w-[80px] h-[80px] rounded-full bg-[#121420]">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className={`transform transition duration-500 rounded-full p-4 w-[50px] ${isOpen ? 'rotate-180 bg-violet-100 ' : 'text-violet-100'}`}>
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            </Button>          
+            </Button>   
+            
+            </div>       
             </div>
 
           <Image src={Janna1} alt="Janna" width={900} />
@@ -60,15 +68,22 @@ function Header() {
           ref={overlayRef}
           className={`overlay ${isOpen ? 'is-open' : ''} absolute inset-0 flex flex-row items-center justify-center transition-[clip-path] duration-100`}>
 
-          <div className='flex flex-col justify-center items-baseline'>
-            <h1 class="inline">
+          <div className='flex flex-col justify-center gap-5'>
+            <h1 class="inline text-8xl">
                 Hi, it's <span class="text-[#B76D68] inline">Janna</span>
             </h1>
-            <Button isIconOnly onClick={handleOverlayToggle} className="cursor-pointer w-20 h-20 rounded-full bg-[#121420]">
-            <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+            <div className='flex flex-row w-[400px] justify-between items-center gap-5'>
+            <p className='text-3xl w-3/4'>Full-Stack, UI/UX, App-Development</p>
+            <Button isIconOnly onClick={handleOverlayToggle} className="cursor-pointer w-[80px] h-[80px] rounded-full bg-[#121420]">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className={`transform transition duration-500 rounded-full p-4 w-[50px] ${isOpen ? 'rotate-180 bg-violet-100 ' : 'text-violet-100'}`}>
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             </Button>
+            </div>
           </div>
 
           <Image src={Janna2} alt="Janna" width={900} />
