@@ -1,11 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+.questrial-regular {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Perfect-Condensed";
+  src: url('fonts/Perfect-Condensed.otf') format('opentype');
+}
+
 
 body {
   height: 100vh;
-  font-family: 'Bebas Neue';
   color:#121420;
 }
 * {
   box-sizing: border-box;
+  font-family: "Questrial", sans-serif;
 }
 
 

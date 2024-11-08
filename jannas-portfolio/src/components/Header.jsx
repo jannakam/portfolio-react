@@ -4,6 +4,7 @@ import { Button } from '@nextui-org/react';
 import Janna1 from '../assets/Janna_1.png';
 import Janna2 from '../assets/Janna_2.png';
 import gsap from 'gsap';
+import '../App.css';
 
 function Header() {
   const overlayRef = useRef(null);
@@ -42,8 +43,8 @@ function Header() {
         <div className='is-open flex flex-row items-center justify-center'>
 
           <div className='flex flex-col justify-center items-baseline'>
-            <h1 class="inline">
-                Hi, it's <span class="text-[#B76D68] inline">Janna</span>
+            <h1 className="inline font-pc text-8xl">
+                HI, IT'S <span className="text-[#B76D68] inline font-pc text-8xl">JANNA</span>
             </h1>
             <Button isIconOnly onClick={handleOverlayToggle} className="cursor-pointer w-20 h-20 rounded-full bg-[#121420]">
             <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -61,8 +62,8 @@ function Header() {
           className={`overlay ${isOpen ? 'is-open' : ''} absolute inset-0 flex flex-row items-center justify-center transition-[clip-path] duration-100`}>
 
           <div className='flex flex-col justify-center items-baseline'>
-            <h1 class="inline">
-                Hi, it's <span class="text-[#B76D68] inline">Janna</span>
+            <h1 class="inline font-pc text-8xl">
+                HI, IT'S <span class="text-[#B76D68] inline font-pc text-8xl">JANNA</span>
             </h1>
             <Button isIconOnly onClick={handleOverlayToggle} className="cursor-pointer w-20 h-20 rounded-full bg-[#121420]">
             <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">

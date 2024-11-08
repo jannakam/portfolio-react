@@ -6,6 +6,7 @@
     /* Custom scrollbar styles */
     * {
       scrollbar-width: none; /* For Firefox */
+      font-family: 'GT-Display';
     }
   
     *::-webkit-scrollbar {
@@ -18,3 +19,5 @@
       overflow: scroll;
     }
   }
+
+  
